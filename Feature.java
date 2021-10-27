@@ -1,18 +1,17 @@
 public class Feature extends Perk {
-  private int _attack;
-  private int _defence;
-
-  // A constructor that takes the attributes of the Feature
-  protected Feature(String name, int atk, int def){
-    this._attack = atk;
-    this._defence = def;
+  public Feature(String name, int atk, int def) {
+    super(name, atk, def);
   }
-  
+
+  public String name() {
+    return this.name();
+  }
+
   public int attack() {
-    return this._attack;
+    return this.attack();
   }
 
   public int defence() {
-    return this._defence;
+    return this.defence();
   }
 }
