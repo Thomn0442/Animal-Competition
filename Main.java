@@ -10,9 +10,9 @@ class Main {
 
     // Creates the locations, formated ("[name]", [type]). Type is used for weaknesses
     var locations = new Location[] {
-      new Location("desert", 1),
-      new Location("swamp", 2),
-      new Location("forest", 3)
+      new Location("Desert", 1),
+      new Location("Swamp", 2),
+      new Location("Forest", 3)
     };
     var battlefield = locations[loc];
     System.out.println(battlefield.name());
