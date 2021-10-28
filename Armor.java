@@ -1,17 +1,15 @@
 public class Armor extends Perk {
-  public Armor(String name, int atk, int def) {
+  Location location;
+  public Armor(String name, int atk, int def, Location loc) {
     super(name, atk, def);
-  }
-  
-  public String name() {
-    return this.name();
+    this.location = loc;
   }
 
   public int attack() {
-    return this.attack();
+    return Methods.EnvironmentOnAttack(this.name(), this.location);
   }
 
   public int defence() {
-    return this.defence();
+    return Methods.EnvironmentOnDefence(this.name(), this.location);
   }
 }
